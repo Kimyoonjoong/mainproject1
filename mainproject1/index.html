@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to my site</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/38fb3ee661.js" crossorigin="anonymous"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+
+<script>
+  $(function() {
+    $('a[href*=#]').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+  });
+</script>
+  </head>
+  <body>
+    <section id="section01" class="demo">
+      <div class="wrapper">
+    <div class="typing-demo">
+      Welcome to My Site
+    </div>
+</div>
+<a href="#section02"><span></span>Scroll</a>
+</section>
+
+<section id="section02" class="demo">
+
+ <h2>About Me</h2>
+<hr>
+
+ <!--<h3>Detail Information</h3>-->
+ <div class="Aubot">
+<p><i class="fas fa-user fa-1x item"></i><strong>이름</strong><br>  &nbsp;김윤중</p>
+<p><i class="fas fa-calendar fa-1x item"></i><strong>생년월일</strong> <br>&nbsp; 1997.10.24</p>
+<p><i class="fas fa-map-marker-alt fa-1x item"></i><strong>거주지</strong><br> &nbsp;서울 성북구</p>
+<p><i class="fas fa-phone-alt fa-1x item"></i><strong>연락처</strong><br> &nbsp;010-6279-2653</p>
+<p><i class="fas fa-envelope fa-1x item"></i><strong>이메일</strong> &nbsp;cheldea1002<br>gmail.com</p>
+<p><i class="fas fa-pen fa-1x item"></i><strong>학력</strong><br>&nbsp;광운대학교 정보과학교육원(게임프로그래밍)</p>
+</div>
+
+      <a href="#section03"><span></span>Scroll</a>
+    </section>
+
+    <section id="section03" class="demo" >
+      <section class="container">
+
+<h3>I'm a web developer and here's what I can do</h3>
+
+
+  <!-- HTML Chart -->
+  <figure class="chart" data-percent="75">
+    <figcaption>HTML</figcaption>
+     <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
+    <svg width="200" height="200">
+      <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+    </svg>
+  </figure>
+
+  <!-- CSS Chart -->
+  <figure class="chart" data-percent="75">
+    <figcaption>CSS</figcaption>
+    <img class="css" src="https://dl.dropboxusercontent.com/s/gftbpqje9h2jvlv/css3.svg">
+    <svg width="200" height="200">
+      <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+    </svg>
+  </figure>
+
+
+  <!-- Javascript Chart -->
+  <figure class="chart" data-percent="50">
+    <figcaption>Javascript</figcaption>
+    <img class="javascript" src="https://dl.dropboxusercontent.com/s/jsp3rsberc4q650/javascript.svg">
+    <svg width="200" height="200">
+      <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+    </svg>
+  </figure>
+
+  <!-- Node.js Chart -->
+  <figure class="chart" data-percent="25">
+    <figcaption>Node</figcaption>
+    <img class="node" src="https://dl.dropboxusercontent.com/s/v28zws1p38tjph2/node.png">
+    <svg width="200" height="200">
+      <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+    </svg>
+  </figure>
+  <p>Pure CSS and SVG animation</p>
+
+</section>
+    	<a href="#thanks"><span></span>Scroll</a>
+    </section>
+
+    <section id="thanks">
+    	<div>
+    		<h2>Thanks!</h2>
+    		<p><a href="index.html">&lt; Back To Article</a></p>
+    	</div>
+    </section>
+  </body>
+</html>
